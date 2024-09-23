@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Idrod';
+    src: url(fonts/IDroid.otf)
+    format(opentype);
+}
+
+header {
+    background-image: linear-gradient( to bottom, #2eaa66, #0d311c);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.395);
+    padding: 1px;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(249, 247, 234);
+}
+
+header > h1 {
+    margin-top: 45px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: Bebas Neue;
+    font-weight: 100;
+}
+
+.headertext {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+nav {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+nav > a {
+    color: #d4f3e292;
+    text-decoration: none;
+    margin-right: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu:hover {
+    background-color: #86BA97;
+    color: #1c663b;
+}
+
+main {
+    background-color: white;
+    margin-left: 128px;
+    margin-right: 128px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.395);font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding: 20px;
+}
+
+section > h2 {
+    margin: 0px;
+    font-family: 'Idroid';
+    color: #0f3821;
+}
+
+.subtitulo {
+    color: #1c663b;
+    background-image: linear-gradient(to right, #62d49295, white);
+    font-family: 'Idroid';
+    padding-left: 7px ;
+}
+
+p {
+    line-height: 25px;
+    text-align: justify;
+}
+
+.link {
+    color: #1c663b;
+    background-color: #86BA97;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link::after {
+    content: '🔗';
+}
+
+.image {
+    text-align: center;
+}
+
+.destacar {
+    color: #1c663b;
+}
+
+#video {
+    background-color: #0d311c;
+    padding: 35px;
+}
+
+h4 {
+    background-color: #1c663b;
+    padding: 5px;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 0px;
+}
+
+#saibamais > article {
+    background-color: #86BA97;
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#lista {
+    display: inline-flex;
+    padding: 1px;
+}
+
+ul {
+    margin-right: 350px;
+}
+
+li {
+    text-decoration: underline;
+    width: 150px;
+}
