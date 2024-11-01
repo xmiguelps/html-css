@@ -9,18 +9,19 @@ body {
 }
 
 section#cell {
-    padding-top: 60px;
-    max-width: 340px;
-    min-height: 620px;
+    max-width: 325px;
+    min-height: 640px;
     background-image: url(imagens/frame-iphone.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position:center;
     margin: auto;
+    margin-top: 70px;
 }
 
 iframe {
     display: block;
     margin: auto;
-    min-width: 310px;
-    min-height: 550px;
+    width: 250px;
+    height: 545px;
 }
