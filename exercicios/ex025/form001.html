@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--Desse jeito ta funcional mas não ta bom-->
+    <h1>Meu primerio formulario</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p>
+            <label for="iNome">Nome:</label> 
+            <input type="text" name="Nome" id="iNome"></p>
+        <p>
+            <label for="iSobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"></p>
+    </form>
+    <!--autocomplate off desliga o ajudante que diz os nomes que voce usou antes que as vezes atrapalha-->
+    <!--action é ativo quando voce clica no submit, que envia os dados, para mexer com esses dados, geralmente se usa php-->
+    <!--Label cria a relação entre o texto e o input(OBRIGATORIO) e tambem da a vantagem de clicar no nome e aparecer para digitar, no for use ou o nome que ta no name ou o nome que ta no id-->
+</body>
+</html>
