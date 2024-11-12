@@ -13,7 +13,7 @@
 <body>
     <!--Desse jeito ta funcional mas não ta bom-->
     <h1>Meu primerio formulario</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="POST" autocomplete="off">
         <p>
             <label for="iNome">Nome:</label> 
             <input type="text" name="Nome" id="iNome"></p>
@@ -26,5 +26,6 @@
     <!--autocomplate off desliga o ajudante que diz os nomes que voce usou antes que as vezes atrapalha-->
     <!--action é ativo quando voce clica no submit, que envia os dados, para mexer com esses dados, geralmente se usa php-->
     <!--Label cria a relação entre o texto e o input(OBRIGATORIO) e tambem da a vantagem de clicar no nome e aparecer para digitar, no for use ou o nome que ta no name ou o nome que ta no id-->
+    <!--Method é a tag que voce pode colocar do lado do formulario e nele é possivel colocar GET e POST, get é o padrão que sempre mostra os dados do form na url e POST esconde os dados e não coloca na url se for enviar dados com get, só vai até 3000 bytes-->
 </body>
 </html>
