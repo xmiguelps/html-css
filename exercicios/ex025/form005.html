@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Foumulario</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sx" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sx" id="isxfem" value="F" checked> <label for="isxfem">Feminino</label>
+            <!--
+                input radio cria as bolinhas que podem ser selecionadas
+
+                se estiver com o mesmo name, elas vão fazer parte do mesmo grupo e não poderam ser selecionadas ao mesmo tempo
+
+                -----------
+
+                input checkbox cria as caixas que pode ser selecionadas
+
+                sistema de grupo não funciona com as checkboxes
+
+                -----------
+
+                se colocar checked no input de alguma delas, ja vai carregar o site com a opção selecionada
+
+                values em ambos, ao enviar os dados ao inves de mandar com "on", vai mandar com o value que voce colocou
+            -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favortitos</legend>
+            <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br> 
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
