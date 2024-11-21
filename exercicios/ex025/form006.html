@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <!--
+            input color cria um quadrado onde o usuario pode escolher uma cor qualquer, sempre começa com a cor preta
+            
+            caso voce não queria com essa cor inicial use "value" e coloque o codigo exadecimal da cor
+        -->
+
+        <p>
+            <label for="inivel">Nivel de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+
+        <!--
+            o input range cria uma barra que pode ser preenchida e diminuida tipo isso
+            *desenho*
+            ele vai do nivel 1 até o 100 normalmente
+
+            caso queria mudar o nivel use o "min" e o "max"
+            e caso queria colocar um valor inicial use "value"
+        -->
+
+        <p>
+            <label for="ifoto">Foto do perfil: </label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+
+        <!--
+            o input file deixa a pessoa escolher uma imagem, essa imagem fica guardada
+
+            com esse input se usa o post pois a imagem n vai ter menos de 3000 bytes
+        -->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
