@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="est" id="iest">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <!--
+            select cria um quadrado onde voce pode colocar listas usando opt(option) e vai ficar tipo isso
+            *desenho do quadrado* 
+            e quando clicar aparece a lista assim
+            *desenho da lista*
+            
+            voce pode juntar as opções em um grupo e titular ele encaixotando todas as opt que voce quer e empacotalas em "optgroup" e para colocar o nome use "label"
+
+            o que vai ser mandado nos dados é o value que voce digitou, como exemplo, se na lista escolher minas gerais e no value dele estiver MG, sera mandado o "MG"
+        -->
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+
+            <!--
+
+                datalist deixa voce criar uma lista para o input que se o usuario quiser ele vai digitar mas se ele quiser ele vai selecionar
+
+                voce faz sua lista usando "datalist" e colocando as "opt" e o seu value vai aparecer tbm, se não quiser ele, é só tirar e deixar o "opt" sozinho
+
+                depois que a lista tiver feita coloque um "id" no datalist e no input coloque "list" e ai voce coloca o id que voce digitou no datalist
+
+                o que vai ser mandado nos dados é o value que voce digitou, como exemplo, se na lista escolher minas gerais e no value dele estiver MG, sera mandado o "MG"
+            -->
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="2" rows="10" placeholder="sua mensagem aqui..."></textarea>
+        </p>
+
+        <!--
+            textarea cria uma area de texto para voce escrever, voce pode digitar quantas colunas e quantas linhas vai ter(são duas letra por coluna), se passar do numero que voce colocou, vai criar barra de rolagem
+            
+            o usuario tambem pode aumentar e diminuir o tamanho do textarea segurando o botão que fica na direita inferior, isso meio que deixa a quantidade de linhas e colunas inutil
+            
+            voce tambem pode colocar um placeholder caso queria
+        -->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+
+</body>
+</html>
