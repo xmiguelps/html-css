@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario(output)</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano voce nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1999" max="2024" value="" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!--
+        output é um tipo de input usado para mostrar dados basedos em outros inputs, ele mostra o dado na tela
+        
+        esse dado q ele mostra pode ser qualquer coisa usando alguma linguagem de programação, como por exemplo JS
+
+        Com a função "oninput" de JS que é quando algo for adicionado ao input, ele vai pegar oq foi adicionado ao input, fazer oq voce pediu na function e voltar com o resultado automaticamente
+    -->
+    <script>
+        function calcIdade() {
+            let ano_atual = new Date().getFullYear()
+            iidade.innerHTML = ano_atual - Number(iano.value) 
+        }
+    </script>
+</body>
+</html>
