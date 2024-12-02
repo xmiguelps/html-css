@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
+    <!--
+        Para fazer os 3 tracinhos ou hamburgue que é como chamam. Use o link de material e icones do google e depois o codigo de span e trocando o que esta escrito dentro dele para menu, voce faz os 3 tracinhos, *desenho*
+        
+        se quiser outro icone, basta ver o nome e escrever ali dentro para aparecer no seu site
+
+        para mudar o cursor do mouse qnd estiver em algum elemento, use "cursor no CSS"
+    -->
+
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="options">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -37,5 +47,14 @@
                 </p>  
         </article>
     </main>
+    <script>
+        function clickMenu() {
+         if (options.style.display == 'block') {
+            options.style.display = 'none'
+         } else {
+            options.style.display = 'block'
+         }
+        }
+    </script>
 </body>
 </html>
