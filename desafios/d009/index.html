@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <!--
         Para fazer os 3 tracinhos ou hamburgue que é como chamam. Use o link de material e icones do google e depois o codigo de span e trocando o que esta escrito dentro dele para menu, voce faz os 3 tracinhos, *desenho*
         
@@ -54,6 +55,14 @@
          } else {
             options.style.display = 'block'
          }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                options.style.display = 'block'
+            } else {
+                options.style.display = 'none'
+            }
         }
     </script>
 </body>
