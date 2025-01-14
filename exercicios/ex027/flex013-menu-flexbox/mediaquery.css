@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 545px) {
+    header > nav {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        width: 550px;
+        height: 300px;
+    }
+
+    header > nav > a {
+        border-radius: 0px;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 10px;
+    }
+
+    header > nav > a:hover {  
+        color: black;
+        background-color: white;
+        transition-duration: 0.3s;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
