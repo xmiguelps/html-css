@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 545px) {
+    header > nav {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 550px;
+    }
+
+    header > nav > a {
+        margin-top: 3px;
+        border-radius: 0px;
+        text-align: center;
+    }
+}
