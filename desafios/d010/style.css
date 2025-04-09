@@ -13,10 +13,9 @@ main {
     padding: 15px;
 }
 
-main > h2 {
+main  h2 {
     margin: 0px;
 }
-
 
 img {
     height: 200px;
@@ -24,10 +23,32 @@ img {
 
 #flex-1 {
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    flex-wrap: wrap-reverse;
+}
+
+#flex-1 > p {
+    text-align: justify;
+    flex: 1 1 0;
+    max-width: 60em;
+    min-width: 40em;
+}
+
+#img {
+    margin-left: 20px;
 }
 
 #flex-2 {
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+}
+
+#flex-2 > p {
+    flex: 1 1 0;
+    max-width: 48em;
+    min-width: 40em;
+}
+
+#video {
+
 }
