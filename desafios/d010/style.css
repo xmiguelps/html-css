@@ -21,10 +21,13 @@ img {
     height: 200px;
 }
 
+#img {
+    margin-left: 20px;
+}
+
 #flex-1 {
     display: flex;
-    flex-flow: row wrap;
-    flex-wrap: wrap-reverse;
+    flex-flow: row wrap-reverse;
 }
 
 #flex-1 > p {
@@ -32,10 +35,6 @@ img {
     flex: 1 1 0;
     max-width: 60em;
     min-width: 40em;
-}
-
-#img {
-    margin-left: 20px;
 }
 
 #flex-2 {
@@ -47,8 +46,4 @@ img {
     flex: 1 1 0;
     max-width: 48em;
     min-width: 40em;
-}
-
-#video {
-
 }
